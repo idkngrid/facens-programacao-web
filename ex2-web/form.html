@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Inscrição</title>
+
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- progress barstle -->
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body class="sub_page">
+  <div class="top_container ">
+    <!-- header section strats -->
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Escola ABC
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#"> Sobre </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Cursos </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Contato </a>
+                </li>
+
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- end header section -->
+
+  <!-- contact section -->
+  <section class="form_section ">
+    <div class="container">
+      <div>
+        <div>
+          <div>
+            <h2>
+              Inscrição
+            </h2>
+          </div>
+          <form action="https://6306b2eec0d0f2b80120919b.mockapi.io/api/v1/cadastro" method="POST">
+            <div class="form_container">
+              <h3>Dados do Aluno</h3>
+              <div>
+                <input type="text" name="nomeAluno" id="nomeAluno" placeholder="Nome do aluno*" required>
+              </div>
+              <div>
+                  <input type="text" name="telefoneAluno" id="telefoneAluno" placeholder="Telefone">
+              </div>
+              <div>
+                  <input type="text" name="celularAluno" id="celularAluno" placeholder="Celular*" required>
+              </div>
+              <div>
+                  <input type="text" name="emailAluno" id="emailAluno" placeholder="E-mail*" required>
+              </div>
+              <div>
+                  <select name="corAluno" id="corAluno">
+                      <option disabled selected>Cor*</option>
+                      <option value="branca">Branca</option>
+                      <option value="preta">Preta</option>
+                      <option value="parda">Parda</option>
+                      <option value="amarela">Amarela</option>
+                      <option value="indigena">Indígena</option>
+                  </select>
+              </div>
+              <div>
+                  <input type="adress" name="endereco" id="endereco" placeholder="Endereço">
+              </div>
+              <div class="adress-number">
+                  <input type="number" name="numero" id="numero" placeholder="Nº">
+              </div>
+              <div>
+                  <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+              </div>
+              <div>
+                  <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+              </div>
+              <div>
+                  <input type="text" name="cep" id="cep" placeholder="CEP">
+              </div>
+              <div>
+                  <input type="text" name="estado" id="estado" placeholder="Estado">
+              </div>
+
+              <h3 style="margin-top: 4rem">Dados do Pai</h3>
+              <div>
+                  <input type="text" name="nomePai" id="nomePai" placeholder="Nome do pai*" required>
+              </div>
+              <div>
+                  <input type="text" name="nascimentoPai" id="nascimentoPai" placeholder="Data de nascimento">
+              </div>
+              <div>
+                  <input type="text" name="naturalidadePai" id="naturalidadePai" placeholder="Naturalidade">
+              </div>
+              <div>
+                  <input type="text" name="instrucaoPai" id="instrucaoPai" placeholder="Instrução">
+              </div>
+              <div>
+                  <input type="text" name="profissaoPai" id="profissaoPai" placeholder="Profissão">
+              </div>
+              <div>
+                  <input type="text" name="celularPai" id="celularPai" placeholder="Celular*" required>
+              </div>
+              <div>
+                  <input type="text" name="emailPai" id="emailPai" placeholder="E-mail*" required>
+              </div>
+              <div>
+                  <input type="text" name="cpfPai" id="cpfPai" placeholder="CPF*" required>
+              </div>
+              <div>
+                  <label for="responsavel">É responsável financeiro?</label>
+                  <input type="radio" name="responsavelFinanceiroPai" id="sim" value="sim" required><label for="sim">Sim</label>
+                  <input type="radio" name="responsavelFinanceiroPai" id="nao" value="nao" required><label for="nao">Não</label>
+              </div> 
+
+              <h3>Dados da Mãe</h3>
+              <div>
+                  <input type="text" name="nomeMae" id="nomeMae" placeholder="Nome da mãe*" required>
+              </div>
+              <div>
+                  <input type="text" name="nascimentoMae" id="nascimentoMae" placeholder="Data de nascimento">
+              </div>
+              <div>
+                  <input type="text" name="naturalidadeMae" id="naturalidadeMae" placeholder="Naturalidade">
+              </div>
+              <div>
+                  <input type="text" name="instrucaoMae" id="instrucaoMae" placeholder="Instrução">
+              </div>
+              <div>
+                  <input type="text" name="profissaoMae" id="profissaoMae" placeholder="Profissão">
+              </div>
+              <div>
+                  <input type="text" name="celularMae" id="celularMae" placeholder="Celular*" required>
+              </div>
+
+              <div>
+                <input type="text" name="emailMae" id="emailMae" placeholder="E-mail*" required>
+              </div>
+              <div>
+                  <input type="text" name="cpfMae" id="cpfMae" placeholder="CPF*" required>
+              </div>
+              <div>
+                  <label for="responsavel">É responsável financeiro?</label>
+                  <input type="radio" name="responsavelFinanceiroMae" id="sim" value="sim" required><label for="sim">Sim</label>
+                  <input type="radio" name="responsavelFinanceiroMae" id="nao" value="nao" required><label for="nao">Não</label>
+              </div> 
+
+              <h3>Dados do Curso</h3>
+              <div>
+                <select name="corAluno" id="corAluno" required>
+                  <option disabled selected>Nome do curso*</option>
+                  <option value="branca">Curso de Inglês</option>
+                  <option value="preta">Curso de Programação</option>
+                  <option value="parda">Curso de Desenho</option>
+              </select>
+              </div>
+              <div>
+                  <input type="text" name="dataCurso" id="dataCurso" placeholder="Data de início" required>
+              </div>
+              <div>
+                  <input type="text" name="valorCurso" id="valorCurso" placeholder="Valor" required>
+              </div>
+              <div>
+                  <input type="text" name="pagamentoCurso" id="pagamentoCurso" placeholder="Forma de pagamento" required>
+              </div> 
+
+              <div class="form_button mt-5">
+                <button type="submit">
+                  enviar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info_section layout_padding-top">
+    <div class="info_logo-box">
+      <h2>
+          Escola ABC
+      </h2>
+    </div>
+      <div class="container">
+          <div class="social_container">
+              
+              <div class="social-box">
+                <a href="">
+                  <img src="images/fb.png" alt="">
+                </a>
+  
+                <a href="">
+                  <img src="images/twitter.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/linkedin.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/instagram.png" alt="">
+                </a>
+              </div>
+            </div>
+      </div>
+    </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2019 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+</html>
