@@ -1,0 +1,34 @@
+/* 1. Determine os tamanhos de fontes para os elementos com textos 
+dentro do corpo das tags <h1>, <li> e <p>, sendo que o h1 deve ser 
+centralizado e as tags p e li devem ter um espaçamento de 2. */
+h1 {    
+    font-size: 2rem;
+    text-align: center;
+}
+
+li {
+    font-size: .8rem;
+    line-height: 2;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* 2. Indique uma cor de fundo para toda a página HTML. */
+body { 
+    background-color: lightslategray;
+}
+
+/* 3. Crie uma classe com o nome alinhado que define seus 
+componentes com inline. */
+.alinhado {
+    display: inline;
+}
+
+/* 4. Crie uma classe com o nome bloco que define seus comentes como 
+block. */
+.bloco {
+    display: block;
+}
