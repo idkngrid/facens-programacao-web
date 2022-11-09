@@ -1,0 +1,12 @@
+<div class="input-group mb-3">
+  <input class="form-control" type="text" name="nomeAssegurado" [(ngModel)]="nomeAssegurado" placeholder="Nome do assegurado" required>
+  <select class="form-select" name="sexo" [(ngModel)]="sexo" required aria-label="Sexo">
+    <option value="undefined" selected>Sexo</option>
+    <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
+  </select>
+  <input class="form-control" type="number" name="idade" [(ngModel)]="idade" placeholder="Idade" required>
+  <input class="form-control" type="number" name="valorAutomovel" [(ngModel)]="valorAutomovel" placeholder="Valor do automóvel" required>
+  <input class="form-control" type="number" name="resultado" [(ngModel)]="resultado" placeholder="Resultado">
+  <button (click)="calcularApoliceSeguro()" class="btn btn-outline-primary">Calcular</button>
+</div>
