@@ -1,0 +1,92 @@
+<!-- 4. Adapte o exercício anterior para o valor não ser mais fixo. O valor deve ser recebido de um campo da tela. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <style>
+        label {
+            display: block;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 2rem;
+            margin-top: 5rem;
+        }
+
+        .input-container label {
+            margin-bottom: 1rem;
+        }
+
+        .input {
+            padding: .3rem;
+            font-size: 1rem;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        .button {
+            background-color: lightblue;
+            padding: .6rem 1.2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgb(126, 175, 190);
+        }
+
+        .result {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="input-container">
+            <label for="numero">Digite o número para ver a tabuada</label>
+            <input type="number" id="input" class="input">
+        </div>
+        <div class="button-container">
+            <button type="button" class="button" id="button">Calcular</button>
+        </div>
+    </div>
+    <div class="result" id="result">
+
+    </div>
+
+    <script>
+
+        const button = document.querySelector('#button');
+        button.addEventListener('click', () => {
+            const input = document.querySelector('#input');
+            const value = input.value;
+            const result = document.querySelector('#result');
+
+            var ul = document.createElement('ul');
+
+            for(let i = 1; i <= 10; i++) {
+                var li = document.createElement('li');
+                li.innerText = `${value} x ${i} = ${value * i}`;
+                ul.appendChild(li);
+            }
+            result.textContent = `Tabuada do ${value}`;
+            result.appendChild(ul);
+        })
+        
+    </script>
+</body>
+</html>

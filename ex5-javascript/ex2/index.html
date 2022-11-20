@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <div id="numeros"></div>
+</head>
+<body>
+
+    <script>
+        // 2. Crie um loop que mostre na tela o valor de 10 a 100.
+        const numeros = document.querySelector('#numeros');
+        var ul = document.createElement('ul');
+
+        for(let i = 10; i <= 100; i++) {
+            var li = document.createElement('li');
+            li.innerText = i;
+            ul.appendChild(li);
+        }
+        numeros.appendChild(ul);
+    </script>
+</body>
+</html>
